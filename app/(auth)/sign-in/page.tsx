@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="bg-emerald-600 p-2 rounded-xl shadow-lg shadow-emerald-600/20 transition-transform group-hover:scale-110">
                     <Book className="text-white" size={24} />
                 </div>
-                <span className="text-2xl font-black tracking-tighter text-slate-900">FACTSaccounts</span>
+                <span className="text-2xl font-black tracking-tighter text-slate-900">FACTS CloudBooks</span>
             </Link>
 
             {/* 4. Clerk Sign In Component */}
