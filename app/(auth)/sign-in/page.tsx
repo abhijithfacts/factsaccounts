@@ -4,7 +4,7 @@ import { SignIn, useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
 import { Book } from "lucide-react";
 import Link from "next/link";
-
+import Image from 'next/image';
 
 export default function Home() {
     const { isSignedIn } = useUser()
@@ -26,10 +26,9 @@ export default function Home() {
 
             {/* 3. Branding Header */}
             <Link href="/" className="relative z-10 mb-8 flex items-center gap-2 group">
-                <div className="bg-emerald-600 p-2 rounded-xl shadow-lg shadow-emerald-600/20 transition-transform group-hover:scale-110">
-                    <Book className="text-white" size={24} />
+                <div >
+                    <Image src='/logo-hor.png' alt="FACTS CloudBooks Logo" width={140} height={40} unoptimized />
                 </div>
-                <span className="text-2xl font-black tracking-tighter text-slate-900">FACTS CloudBooks</span>
             </Link>
 
             {/* 4. Clerk Sign In Component */}

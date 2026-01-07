@@ -14,6 +14,7 @@ import { ChartAreaInteractive } from '@/components/charts/chart-area-interactive
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@clerk/nextjs'
+import Image from 'next/image';
 
 
 // Fixed: Corrected prop destructuring for the Icon component
@@ -79,10 +80,10 @@ export default function LandingPage() {
       {/* 3. Navigation */}
       <nav className="flex items-center justify-between px-6 lg:px-12 py-5 bg-white/70 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-200/50">
         <div className="flex items-center gap-2.5">
-          <div className="bg-emerald-600 p-2 rounded-xl shadow-lg shadow-emerald-600/20 transition-transform hover:scale-105 cursor-pointer">
-            <Book className="text-white" size={20} />
+          <div className="">
+            {/* <Book className="text-white" size={20} /> */}
+            <Image src='/logo-hor.png' alt="FACTS CloudBooks Logo" width={140} height={40} unoptimized />
           </div>
-          <span className="text-xl font-extrabold tracking-tighter text-slate-900">FACTS CloudBooks</span>
         </div>
 
         <div className="hidden md:flex items-center gap-10 text-sm font-bold text-slate-500">
@@ -205,7 +206,7 @@ export default function LandingPage() {
 
       <footer className="py-12 border-t border-slate-200 text-center">
         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest italic">
-          &copy; 2026 FACTS CloudBooks ERP — The Standard in Financial Intelligence
+          &copy; 2026 FACTS CloudBooks — The Standard in Financial Intelligence
         </p>
       </footer>
     </div>
