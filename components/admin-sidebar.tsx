@@ -137,25 +137,18 @@ const data = {
             title: "System Settings",
             icon: Settings2,
             items: [
-                { title: "General Settings", url: "/admin/settings" },
-                { title: "Feature Flags", url: "/admin/features" },
-                { title: "Integrations", url: "/admin/integrations" },
+                { title: "General Settings", url: "/admin/settings/general" },
+                { title: "Chart of accounts", url: "/admin/settings/accounts" },
+                { title: "Financial Years", url: "/admin/settings/years" },
+                { title: "Opening Balances", url: "/admin/settings/balances" },
+                { title: "Taxes / VAT / GST", url: "/admin/settings/taxes" },
+                { title: "Numbering Series", url: "/admin/settings/numbering" },
+                { title: "Audit Logs", url: "/admin/settings/logs" },
+                { title: "Period Locking", url: "/admin/settings/locking" },
+                { title: "Data Approval Rules", url: "/admin/settings/approvals" },
             ],
         },
-    ],
-
-    projects: [
-        {
-            name: "FY 2025–26 Setup",
-            url: "/admin/projects/fy-2025",
-            icon: Frame,
-        },
-        {
-            name: "Internal Audit",
-            url: "/admin/projects/audit",
-            icon: PieChart,
-        },
-    ],
+    ]
 };
 
 
@@ -277,7 +270,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
                         ))}
                     </SidebarMenu>
                 </SidebarGroup>
-                <SidebarGroup className="group-data-[collapsible=icon]:hidden">
+                {/* <SidebarGroup className="group-data-[collapsible=icon]:hidden">
                     <SidebarGroupLabel>Projects</SidebarGroupLabel>
                     <SidebarMenu>
                         {data.projects.map((item) => (
@@ -325,7 +318,7 @@ export function AdminSidebar({ ...props }: React.ComponentProps<typeof Sidebar>)
                             </SidebarMenuButton>
                         </SidebarMenuItem>
                     </SidebarMenu>
-                </SidebarGroup>
+                </SidebarGroup> */}
             </SidebarContent>
             <SidebarFooter>
                 <SidebarMenu>

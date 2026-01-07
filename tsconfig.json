@@ -37,7 +37,7 @@
     "global.d.ts",
     ".next/dev/types/**/*.ts",
     "clerk.d.ts"
-  ],
+, "app/admin/roles/[id]/page.jsx", "components/admin/setup/settings-table.jsx", "app/admin/settings/[slug]/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
