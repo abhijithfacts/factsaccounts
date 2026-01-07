@@ -199,9 +199,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     }
 
     return (
-        <Sidebar collapsible="icon" className="border-r border-slate-800" // Dark border
-
-            {...props}>
+        <Sidebar collapsible="icon" className="border-r" {...props}>
             <SidebarHeader>
                 <SidebarMenu>
                     <SidebarMenuItem>
