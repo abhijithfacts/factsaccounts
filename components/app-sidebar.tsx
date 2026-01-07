@@ -9,7 +9,7 @@ import {
     BookOpen,
     Bot,
     ChevronRight,
-    ChevronsUpDown,
+    ChevronsUpDown, Warehouse,
     Command,
     CreditCard,
     Folder,
@@ -104,6 +104,15 @@ const data = {
                 { title: "Journal Entries", url: "/finance/journal" },
                 { title: "Ledger", url: "/finance/ledger" },
                 { title: "Opening Balances", url: "/finance/opening-balances" },
+            ],
+        },
+        {
+            title: "Stock Management",
+            // url: "/accounts",
+            icon: Warehouse,
+            items: [
+                { title: "Inventory", url: "/inventory" }
+
             ],
         },
 
