@@ -1,7 +1,7 @@
 // app/(dashboard)/layout.tsx
 import { AppSidebar } from "@/components/app-sidebar";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemePicker } from "@/components/theme-toggle";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 
@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <SidebarTrigger />
             <Breadcrumbs />
           </div>
-          <ThemeToggle />
+          <ThemePicker />
         </div>
         {children}
       </main>

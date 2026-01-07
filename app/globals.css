@@ -115,6 +115,26 @@
 }
 
 @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --primary: 240 5.9% 10%;
+    --radius: 0.5rem;
+  }
+
+  /* Blue Theme Accent */
+  [data-theme="blue"] {
+    --primary: 221.2 83.2% 53.3%;
+  }
+
+  /* Green Theme Accent */
+  [data-theme="green"] {
+    --primary: 142.1 76.2% 36.3%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --primary: 0 0% 98%;
+  }
   * {
     @apply border-border outline-ring/50;
   }

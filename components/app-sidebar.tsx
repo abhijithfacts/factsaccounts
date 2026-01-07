@@ -87,12 +87,12 @@ const data = {
     navMain: [
         {
             title: "Dashboard",
-            url: "/overview",
+            url: "/",
             icon: SquareTerminal,
             isActive: false,
-            // items: [
-            //     { title: "Overview", url: "/overview" }
-            // ],
+            items: [
+                { title: "Overview", url: "/overview" }
+            ],
         },
 
         {

@@ -7,4 +7,15 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "hsl(var(--primary))", // Must use the variable here
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        // ... other colors
+      },
+    },
+  },
 };
