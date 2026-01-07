@@ -87,7 +87,7 @@ function OrgRow({ name, email, plan, status, users, date }: any) {
                 <Badge variant="outline">{plan}</Badge>
             </TableCell>
             <TableCell>
-                <Badge variant={status === "Active" ? "success" : "destructive"}>
+                <Badge variant={status === "Active" ? "default" : "destructive"}>
                     {status}
                 </Badge>
             </TableCell>
