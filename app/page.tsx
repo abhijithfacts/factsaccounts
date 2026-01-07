@@ -82,7 +82,7 @@ export default function LandingPage() {
           <div className="bg-emerald-600 p-2 rounded-xl shadow-lg shadow-emerald-600/20 transition-transform hover:scale-105 cursor-pointer">
             <Book className="text-white" size={20} />
           </div>
-          <span className="text-xl font-extrabold tracking-tighter text-slate-900">FinTrack</span>
+          <span className="text-xl font-extrabold tracking-tighter text-slate-900">FACTSaccounts</span>
         </div>
 
         <div className="hidden md:flex items-center gap-10 text-sm font-bold text-slate-500">
@@ -205,7 +205,7 @@ export default function LandingPage() {
 
       <footer className="py-12 border-t border-slate-200 text-center">
         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest italic">
-          &copy; 2026 FinTrack ERP — The Standard in Financial Intelligence
+          &copy; 2026 FACTSaccounts ERP — The Standard in Financial Intelligence
         </p>
       </footer>
     </div>
